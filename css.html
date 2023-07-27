@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>선택자</title>
+  </head>
+  <body>
+    <h1 class="tit">제이쿼리</h1>
+    <h2 id="tit">선택자</h2>
+    <h3 id="tit3">직접 선택자</h3>
+    <h3 class="tit">인접 선택자</h3>
+    <script>
+      $(function () {
+        // $("*").css("border", "1px solid #fff");
+        // $("*").css({
+        //   color: "white",
+        //   backgroundColor: "black",
+        // });
+        // $("#tit").css({
+        //   backgroundColor: "black",
+        //   color: "#fff",
+        //   textAlign: "center",
+        //   fontSize: "22px",
+        // });
+        // $(".tit").css({
+        //   backgroundColor: "blue",
+        //   color: "#fff",
+        //   textAlign: "center",
+        //   fontSize: "22px",
+        // });
+        // $("h3").css({
+        //   backgroundColor: "red",
+        //   color: "#fff",
+        //   textAlign: "center",
+        //   fontSize: "22px",
+        // });
+        $("h1, #tit3").css({
+          backgroundColor: "black",
+          color: "#fff",
+          textAlign: "center",
+          fontSize: "22px",
+        });
+        $("h3.tit").css({
+          backgroundColor: "red",
+          color: "#fff",
+          textAlign: "center",
+          fontSize: "22px",
+        });
+      });
+    </script>
+  </body>
+</html>

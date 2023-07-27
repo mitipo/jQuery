@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>선택자8 (parents)</title>
+  </head>
+  <body>
+    <h1 class="title">탐색 선택자</h1>
+    <ul id="menu">
+      <li>내용1</li>
+      <li>내용2</li>
+      <li>내용3</li>
+      <li>내용4</li>
+      <li>내용4</li>
+    </ul>
+    <!-- 스크립트 -->
+    <script>
+      $(function () {
+        // $("#menu li").eq(2).css({
+        //   backgroundColor: "yellow",
+        // });
+        // lt(),gt() ---> 필터선택자중에 하나.
+        // lt()---> 선택 요소중 인덱스보다 작은 인덱스를 가진 요소들을 선택.
+        $("#menu li:lt(2)").css({
+          backgroundColor: "aqua",
+        });
+        // gt()---> 선택 요소중
+        $("#menu li:gt(2)").css({
+          backgroundColor: "yellow",
+        });
+      });
+    </script>
+  </body>
+</html>

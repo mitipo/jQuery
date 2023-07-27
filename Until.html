@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>선택자6 (until)</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1 class="title">선택자</h1>
+      <p>내용1</p>
+      <p>내용2</p>
+      <p class="txt3">내용3</p>
+      <p>내용4</p>
+      <p>내용5</p>
+      <p class="txt6">내용6</p>
+    </div>
+    <script>
+      $(function () {
+        var style_1 = {
+          backgroundColor: "#0ff",
+          border: "2px solid #f00",
+        };
+        // prevUntil()/nextUntil()은 선택한 특정 조건을 만족하는 요소사이에 있는 형제요소들을 선택.
+        $(".txt3").prevUntil(".title").css(style_1);
+        $(".txt3").nextUntil("p:eq(5)").css(style_1);
+      });
+    </script>
+  </body>
+</html>

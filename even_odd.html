@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>선택자9 (even/odd)</title>
+  </head>
+  <body>
+    <h1 class="title">탐색 선택자</h1>
+    <ul id="menu">
+      <li>내용1</li>
+      <li>내용2</li>
+      <li>내용3</li>
+      <li>내용4</li>
+    </ul>
+    <!-- 스크립트 -->
+    <script>
+      $(function () {
+        // 홀수 even
+        $("#menu li:even").css({
+          backgroundColor: "red",
+        });
+        // 짝수 odd
+        $("#menu li:odd").css({
+          backgroundColor: "blue",
+        });
+      });
+    </script>
+  </body>
+</html>

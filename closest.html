@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>선택자8 (parents)</title>
+  </head>
+  <body>
+    <h1 class="title">선택지</h1>
+    <div>
+      <div>
+        <p class="txt1">내용</p>
+      </div>
+    </div>
+    <!--  -->
+    <script>
+      $(function () {
+        // closest() : 선택한 요소의 가장 가까운 부모요소 선택.
+        $(".txt1").closest("div").css({
+          backgroundColor: "red",
+        });
+      });
+    </script>
+  </body>
+</html>
